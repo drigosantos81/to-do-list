@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public titulo:string = "Meu primeiro projeto Angular";
+
+  // Primeira função a ser executada
+  constructor(){
+    console.log('Comecei a executar');
+  }
+  getTarefa(tarefa:string): void {
+    console.log('A tarefa foi', tarefa);
+  }
 }

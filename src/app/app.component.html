@@ -1,1 +1,3 @@
 <h1> {{titulo}} </h1>
+<input #tarefa (keyup.enter)="getTarefa(tarefa.value)">
+<button (click)="getTarefa(tarefa.value)">Salvar</button>
